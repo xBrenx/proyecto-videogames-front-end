@@ -38,7 +38,6 @@ export default function Home() {
         if(currentPage < Math.ceil(allVideogames.length/15)){
           paginado(currentPage + 1)
         }else{
-          console.log(currentPage);
           console.log(Math.ceil(allVideogames/15))
         }
         

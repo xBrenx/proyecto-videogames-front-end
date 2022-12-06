@@ -8,7 +8,6 @@ import {
   SEARCH_VIDEOGAME,
   LOADER,
   CREATE_VIDEOGAME,
-  SOUND
 } from "../Actions/actions";
 
 const initialState = {
@@ -138,18 +137,6 @@ const rootReducer = (state = initialState, action) => {
         return{
           ...state
         }
-        case SOUND:
-          const sound = state.loader
-          if(sound){
-            return{
-              ...state,
-              loader: false
-            }
-          }
-          return{
-            ...state,
-            sound: true
-          }
     default:
       return state;
   }
