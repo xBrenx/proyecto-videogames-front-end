@@ -6,7 +6,7 @@ import Home from './Pages/Home/Home'
 import start from './Pages/Start/start';
 import Details from './Pages/Details/Details';
 import Create from './Pages/Create/Create';
-import Error404 from './Pages/Error/Error404';
+
 
 function App() {
   return (
@@ -26,10 +26,6 @@ function App() {
       <Route exact path="/videogames/:id">
         <Details/>
       </Route>
- 
-      {/* <Route path="/*">
-        <Error404/>
-      </Route>  */}
       
     </div>
   );
