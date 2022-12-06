@@ -12,18 +12,18 @@ export const LOADER = "LOADER";
 export const SOUND = "SOUND";
 
 export const getAllVideogames = () => async (dispatch) => {
-    return await axios.get('http://localhost:3001/videogames')
+    return await axios.get('/videogames')
         .then(array => dispatch({ type: GET_ALL_VIDEOGAME, payload: array.data }))
         .catch(error => window.location.replace("/*"))
 };
 
 export const getAllGenres = () => async (dispatch) => {
-    return await axios.get('http://localhost:3001/genders')
+    return await axios.get('/genders')
     .then(array => dispatch({ type: GET_ALL_GENDERS, payload: array.data }))
 };
 
 export const getOneVideogame = (id) => async (dispatch) => {
-    return await axios.get(`http://localhost:3001/videogames/${id}`)
+    return await axios.get(`/videogames/${id}`)
     .then(array => dispatch({ type: GET_ONE_GAME, payload: array.data}))
     .catch(error => window.location.replace("/*"))
 };
@@ -41,13 +41,13 @@ export const filterGender = (valor) => (dispatch) => {
 };
 
 export const searchVideoagame = (name) => async (dispatch) => {
-    return axios.get(`http://localhost:3001/videogames?name=${name}`)
+    return axios.get(`/videogames?name=${name}`)
     .then(array => dispatch({ type: SEARCH_VIDEOGAME, payload: array.data }))
     .catch(error => window.location.replace("/*"))
 };
 
 export const createVideogame = (obj) => async (dispatch) => {
-    return axios.post(`http://localhost:3001/videogames`, obj)
+    return axios.post(`/videogames`, obj)
     .then(dispatch({type: CREATE_VIDEOGAME}))
 };
 
