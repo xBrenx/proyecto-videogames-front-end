@@ -1,30 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "./Videocopia.mp4";
-// import sound from "./sound.mp3";
+import bg from "./Video.webm";
+ import sound from "./sound.ogg";
 
 
 import "./start.css";
 
 export default function start() {
 
-  // var boo = false;
-  // const mute = () => {
-  //   if (boo) {
-  //     document.getElementById("player").volume = 0.90;
-  //     boo = !boo;
-  //   } else {
-  //     document.getElementById("player").volume = 0;
-  //     boo = !boo;
-  //   }
-  // };
+  var boo = false;
+  const mute = () => {
+    if (boo) {
+      document.getElementById("player").volume = 0.90;
+      boo = !boo;
+    } else {
+      document.getElementById("player").volume = 0;
+      boo = !boo;
+    }
+  };
 
   return (
     <>
       <video autoPlay loop className="video" muted>
         <source src={bg} type="video/mp4"></source>
       </video>
-       {/* <audio id="player" src={sound} autoPlay controls ></audio>  */}
+        <audio id="player" src={sound} autoPlay controls ></audio>  
 
       <div className="start" >
         <div className="fancy">
@@ -36,10 +36,10 @@ export default function start() {
           <span className="bottom-key-2"></span>
           
         </div>
-        {/* <label className="switch" onChange={() => mute()}>
+        <label className="switch" onChange={() => mute()}>
           <input type="checkbox" />
           <span className="slider"></span>
-        </label> */}
+        </label>
       </div>
     </>
   );
