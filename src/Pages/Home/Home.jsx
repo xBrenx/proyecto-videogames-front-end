@@ -95,7 +95,14 @@ export default function Home() {
   } else if(currentVideogames?.length === 0){
     return(
       <div key={1}>
-        <h3 className="error_h3" style={{color: "#630ec5"}}>¡No found!</h3>
+        <Options
+          resetea={resetea}
+          handleSource={handleSource}
+          handleOrden={handleOrden}
+          handleGender={handleGender}
+          allGenders={allGenders}
+        />
+        <h3 className="error_h3" style={{color: "#630ec5"}}>¡Not found!</h3>
       <img className="error_image" src={not_found} alt="not found" />
       </div>
     )
