@@ -1,0 +1,43 @@
+.dropdown {
+  display: inline-block;
+  position: relative;
+  width: 700px;
+  align-items: center;
+}
+
+.container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.a {
+  width: 300px;
+}
+.button {
+  width: 100%;
+}
+
+.nohay {
+  color: white;
+}
+
+.pagina {
+  color: #630ec5;
+  display: flex;
+  justify-content: center;
+}
+
+.error_image {
+  width: 777px;
+  position: absolute;
+  left: 501px;
+  bottom: 16px;
+}
+
+.error_h3 {
+  font-size: 40px;
+  margin-left: 185px;
+  margin-top: 163px;
+}

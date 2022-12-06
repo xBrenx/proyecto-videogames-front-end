@@ -1,0 +1,7 @@
+.errors{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    color: #630ec5;
+    font-size: 50px;
+}
