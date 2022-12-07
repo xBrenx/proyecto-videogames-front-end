@@ -12,18 +12,18 @@ export const LOADER = "LOADER";
 export const SOUND = "SOUND";
 
 export const getAllVideogames = () => async (dispatch) => {
-    return await axios.get('/videogames')
+    return await axios.get('https://videogames-back-end-production.up.railway.app/videogames')
         .then(array => dispatch({ type: GET_ALL_VIDEOGAME, payload: array.data }))
 
 };
 
 export const getAllGenres = () => async (dispatch) => {
-    return await axios.get('/genders')
+    return await axios.get('https://videogames-back-end-production.up.railway.app/genders')
     .then(array => dispatch({ type: GET_ALL_GENDERS, payload: array.data }))
 };
 
 export const getOneVideogame = (id) => async (dispatch) => {
-    return await axios.get(`/videogames/${id}`)
+    return await axios.get(`https://videogames-back-end-production.up.railway.app/videogames/${id}`)
     .then(array => dispatch({ type: GET_ONE_GAME, payload: array.data}))
    
 };
@@ -41,13 +41,13 @@ export const filterGender = (valor) => (dispatch) => {
 };
 
 export const searchVideoagame = (name) => async (dispatch) => {
-    return axios.get(`/videogames?name=${name}`)
+    return axios.get(`https://videogames-back-end-production.up.railway.app/videogames?name=${name}`)
     .then(array => dispatch({ type: SEARCH_VIDEOGAME, payload: array.data }))
  
 };
 
 export const createVideogame = (obj) => async (dispatch) => {
-    return axios.post(`/videogames`, obj)
+    return axios.post(`https://videogames-back-end-production.up.railway.app/videogames`, obj)
     .then(dispatch({type: CREATE_VIDEOGAME}))
 };
 

@@ -9,7 +9,7 @@ import store from "../src/Redux/Store/Store";
 import axios from 'axios'
 
 //  axios.defaults.baseURL = 'http://localhost:3001';
- axios.defaults.baseURL = 'https://videogames-back-end-production.up.railway.app/';
+//  axios.defaults.baseURL = 'https://videogames-back-end-production.up.railway.app/';
 
 ReactDOM.render(
   <React.StrictMode>
