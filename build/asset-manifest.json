@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.ff9cf470.chunk.css",
-    "main.js": "/static/js/main.30d157e2.chunk.js",
-    "main.js.map": "/static/js/main.30d157e2.chunk.js.map",
+    "main.js": "/static/js/main.d6f2d5de.chunk.js",
+    "main.js.map": "/static/js/main.d6f2d5de.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed28218.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed28218.js.map",
     "static/js/2.cf86eff1.chunk.js": "/static/js/2.cf86eff1.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/index.html",
     "static/css/main.ff9cf470.chunk.css.map": "/static/css/main.ff9cf470.chunk.css.map",
     "static/js/2.cf86eff1.chunk.js.LICENSE.txt": "/static/js/2.cf86eff1.chunk.js.LICENSE.txt",
-    "static/media/Videogame_trim.3936f8a6.mp4": "/static/media/Videogame_trim.3936f8a6.mp4",
+    "static/media/Videogame_Trim.3936f8a6.mp4": "/static/media/Videogame_Trim.3936f8a6.mp4",
     "static/media/not_found.69630952.webp": "/static/media/not_found.69630952.webp",
     "static/media/sound.6c07c048.ogg": "/static/media/sound.6c07c048.ogg"
   },
@@ -20,6 +20,6 @@
     "static/js/runtime-main.0ed28218.js",
     "static/js/2.cf86eff1.chunk.js",
     "static/css/main.ff9cf470.chunk.css",
-    "static/js/main.30d157e2.chunk.js"
+    "static/js/main.d6f2d5de.chunk.js"
   ]
 }

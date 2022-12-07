@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SearchBar from "../../Components/SearchBar/SearchBar";
 import "./Nav.css";
 
-export default function Nav() {
+export default function Nav({handleSearch}) {
   return (
     <div className="Nav" style={{textAlign: "center"}}>
       <Link to="/">
@@ -13,12 +12,20 @@ export default function Nav() {
         
         </button>
       </Link>
-      <SearchBar />
-      <Link to="/videogames">
-        <button className="btn">
-            Games
-        </button>
-      </Link>
+      
+      <div>
+      <div className="form">
+        <input
+          className="input"
+          placeholder="Type your text"
+          required=""
+          type="text"
+          onChange={(e) => handleSearch(e)}
+        />
+        <span className="input-border"></span>
+      </div>
+    </div>
+
       <Link to="/create">
         <button className="btn">
           

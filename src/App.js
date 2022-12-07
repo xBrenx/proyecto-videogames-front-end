@@ -1,7 +1,6 @@
 import { Route, Switch } from "react-router-dom";
 import React from "react";
 import "./App.css";
-import Nav from "./Pages/Nav/Nav";
 import Home from "./Pages/Home/Home";
 import start from "./Pages/Start/start";
 import Details from "./Pages/Details/Details";
@@ -14,7 +13,6 @@ function App() {
         <Route exact path="/" component={start} />
 
         <Route exact path="/videogames">
-          <Nav />
           <Home />
         </Route>
 
