@@ -26,6 +26,12 @@ export default function Nav({handleSearch}) {
       </div>
     </div>
 
+    <Link to="/videogames">
+        <button className="btn">
+            Games
+        </button>
+      </Link>
+
       <Link to="/create">
         <button className="btn">
           
