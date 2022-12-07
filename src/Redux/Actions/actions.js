@@ -14,7 +14,7 @@ export const SOUND = "SOUND";
 export const getAllVideogames = () => async (dispatch) => {
     return await axios.get('/videogames')
         .then(array => dispatch({ type: GET_ALL_VIDEOGAME, payload: array.data }))
-        .catch(error => window.location.replace("/*"))
+
 };
 
 export const getAllGenres = () => async (dispatch) => {
@@ -25,7 +25,7 @@ export const getAllGenres = () => async (dispatch) => {
 export const getOneVideogame = (id) => async (dispatch) => {
     return await axios.get(`/videogames/${id}`)
     .then(array => dispatch({ type: GET_ONE_GAME, payload: array.data}))
-    .catch(error => window.location.replace("/*"))
+   
 };
 
 export const filterOrder = (valor) => (dispatch) => {
@@ -43,7 +43,7 @@ export const filterGender = (valor) => (dispatch) => {
 export const searchVideoagame = (name) => async (dispatch) => {
     return axios.get(`/videogames?name=${name}`)
     .then(array => dispatch({ type: SEARCH_VIDEOGAME, payload: array.data }))
-    .catch(error => window.location.replace("/*"))
+ 
 };
 
 export const createVideogame = (obj) => async (dispatch) => {

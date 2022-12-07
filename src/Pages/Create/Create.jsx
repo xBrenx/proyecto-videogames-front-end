@@ -158,9 +158,6 @@ export default function Create() {
     }
   };
 
-  console.log(input)
-
-  console.log("compress&cs=tinysrgb&dpr=1&w=500");
   if (!load) {
     return <Load />;
   } else {

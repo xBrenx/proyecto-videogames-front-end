@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg from "./Videogame_trim.mp4";
+import bg from "./Videogame_Trim.mp4";
  import sound from "./sound.ogg";
 
 
