@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./Home.css";
 import {
-  searchVideoagame,
   getAllVideogames,
   filterOrder,
   filterSource,
@@ -73,11 +72,6 @@ export default function Home() {
     paginado(1);
   };
 
-  const handleSearch = (e) => {
-    dispatch(searchVideoagame(e.target.value));
-    paginado(1);
-  };
-
   useEffect(async () => {
     if (ordenado === "") {
       dispatch(loading())
@@ -102,9 +96,7 @@ export default function Home() {
   } else if(currentVideogames?.length === 0){
     return(
       <div key={1}>
-        <Nav
-        handleSearch={handleSearch}
-        />
+        <Nav paginado={paginado} resetea={resetea}/>
         <Options
           resetea={resetea}
           handleSource={handleSource}
@@ -117,11 +109,9 @@ export default function Home() {
       </div>
     )
   }else{
-    return (
+    return (  
       <div>
-        <Nav
-        handleSearch={handleSearch}
-        />
+        <Nav paginado={paginado} resetea={resetea}/>
         <Options
           resetea={resetea}
           handleSource={handleSource}
