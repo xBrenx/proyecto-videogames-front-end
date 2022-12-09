@@ -157,6 +157,11 @@
 }
 
 .contenedor-loader {
-  margin-top: 50%;
   text-align: center;
+}
+
+@media ( max-width:1210px){
+  .contenedor-loader{
+    margin-top: 50%;
+  }
 }
