@@ -104,8 +104,10 @@ export default function Home() {
           handleGender={handleGender}
           allGenders={allGenders}
         />
-        <h3 className="error_h3" style={{color: "#630ec5"}}>¡Not found!</h3>
+      <div className="error-content">
+      <h3 className="error_h3" style={{color: "#630ec5"}}>¡Not found!</h3>
       <img className="error_image" src={not_found} alt="not found" />
+      </div>
       </div>
     )
   }else{

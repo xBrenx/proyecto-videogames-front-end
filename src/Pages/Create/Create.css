@@ -229,3 +229,17 @@ input:checked {
     transform-origin: center;
     transition: background 0.3s linear, width 0.3s linear;
    }
+
+   @media ( max-width:610px){
+    .form{
+      width: auto;
+    }
+    .basic-info{
+      justify-content: center;
+      gap: 1rem;
+      display: grid;
+    }
+    .genders-platforms-container{
+      display: grid;
+    }
+   };

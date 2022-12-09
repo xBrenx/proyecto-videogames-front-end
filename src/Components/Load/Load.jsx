@@ -4,7 +4,8 @@ import React from "react";
 
 export default function Load() {
   return (
-    <div style={{ marginTop: "18%", textAlign: "center"}}>
+   <div className="contenedor-loader">
+     <div style={{ marginTop: "18%", textAlign: "center"}}>
       <div className="loader">
         <svg viewBox="0 0 80 80">
           <circle id="test" cx="40" cy="40" r="32"></circle>
@@ -23,5 +24,6 @@ export default function Load() {
         </svg>
       </div>
     </div>
+   </div>
   );
 }

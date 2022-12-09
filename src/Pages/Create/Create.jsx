@@ -147,7 +147,7 @@ export default function Create() {
       dispatch(createVideogame(input));
       setInput({
         name: "",
-       
+        image: "",
         rating: 0,
         description: "",
         realeased: "",

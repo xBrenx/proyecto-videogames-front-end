@@ -20,7 +20,7 @@ export default function start() {
   };
 
   return (
-    <>
+    <div className="contenido">
       <video autoPlay loop className="video" muted>
         <source src={bg} type="video/mp4"></source>
       </video>
@@ -36,11 +36,11 @@ export default function start() {
           <span className="bottom-key-2"></span>
           
         </div>
-        <label className="switch" onChange={() => mute()}>
+      </div>
+      <label className="switch" onChange={() => mute()}>
           <input type="checkbox" />
           <span className="slider"></span>
         </label>
-      </div>
-    </>
+    </div>
   );
 }
