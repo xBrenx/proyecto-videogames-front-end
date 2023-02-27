@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function Options({ resetea, handleSource, handleOrden, handleGender, allGenders}) {
-
+  
   return (
     <div style={{textAlign: "center"}} >
       <select className="btn" name="Source" style={{backgroundColor:"black"}} onChange={e => handleSource(e)}>
@@ -33,7 +33,7 @@ export default function Options({ resetea, handleSource, handleOrden, handleGend
         </option>
         {
           allGenders?.map(e =>(
-            <option className="btn" key={e[0]} value={e[0]}>{e[0]}</option>
+            <option className="btn" key={allGenders.indexOf(e)} value={e[0]}>{e[0]}</option>
           ))
         }
       </select>

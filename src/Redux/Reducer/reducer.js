@@ -91,13 +91,13 @@ const rootReducer = (state = initialState, action) => {
     if(action.payload === "Api"){
         return {
             ...state,
-            Videogames: filtrado.filter(e => ! e.hasOwnProperty("createdInDb"))
+            Videogames: filtrado.filter(e => e.createdInDb === false)
         }
     }
     if(action.payload === "Created"){
         return {
             ...state,
-            Videogames: filtrado.filter(e =>  e.hasOwnProperty("createdInDb"))
+            Videogames: filtrado.filter(e => e.createdInDb === true)
         }
     }
     return state;

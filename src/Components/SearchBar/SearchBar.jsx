@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { searchVideoagame } from "../../Redux/Actions/actions";
+import { getAllVideogames, searchVideoagame } from "../../Redux/Actions/actions";
 import "./SearchBar.css"
 
 export default function SearchBar({paginado, resetea }) {
+
+  const [search, setSearch] = useState("")
   const dispatch = useDispatch();
 
-  function handleSearch(e) {
+  function handleSearch(search) {
+   if(search === ""){
     paginado(1)
-    dispatch(searchVideoagame(e.target.value));
+    dispatch(getAllVideogames())
+   }else{
+    paginado(1)
+    console.log(search)
+    dispatch(searchVideoagame(search));
+   }
+    
   };
 
   return (
@@ -20,11 +29,11 @@ export default function SearchBar({paginado, resetea }) {
           placeholder="Type your text"
           required=""
           type="text"
-          onChange={(e) => handleSearch(e)}
+          onChange={(e) => setSearch(e.target.value)}
         />
         <span className="input-border"></span>
       </div>
-      <button className="btn" onClick={resetea}>reset</button>
+      <button className="btn" onClick={() => handleSearch(search)}>Search</button>
     </div>
   );
 }

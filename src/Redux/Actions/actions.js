@@ -42,6 +42,7 @@ export const filterGender = (valor) => (dispatch) => {
 
 export const searchVideoagame = (name) => async (dispatch) => {
     return axios.get(`/videogames?name=${name}`)
+    .then(console.log(name))
     .then(array => dispatch({ type: SEARCH_VIDEOGAME, payload: array.data }))
  
 };

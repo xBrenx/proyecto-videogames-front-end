@@ -22,6 +22,7 @@ export default function Home() {
   const allVideogames = useSelector((state) => state.Videogames);
   const allGenders = useSelector((state) => state.Genders);
   const load = useSelector((state) => state.loader);
+  
   const [currentPage, setcurrentPage] = useState(1);
   const [ordenado, setOrdenado] = useState("");
   const indexLastVideogame = currentPage * 15; //15
